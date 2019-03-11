@@ -1,0 +1,24 @@
+#content {
+  width: 900px
+  margin: 0 auto;
+}
+#byline{font-family: Helvetica, sans-serif;
+font-size: 14px;
+font-style: italic;}
+p{font-family: Georgia, serif;
+font-size: 13px;}
+h1{font-family: Helvetica, sans-serif;
+font-size: 30px;}
+blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 1.5em 0 0.5em;
+  margin: 1.5em 0;
+  position: relative;
+  font-size: 24px;
+}
+#caption{font-family: Georgia, serif;
+font-size: 13px;
+font-style: italic;}
