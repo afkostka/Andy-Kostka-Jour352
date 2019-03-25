@@ -20,6 +20,9 @@ body{font-family:Helvetica, Arial, sans-serif;
   font-style: italic;}
 
   #name{font-style:italic;}
+  span.ex1 {
+  min-width: 500px;
+}
 
   blockquote {
     display: block;
