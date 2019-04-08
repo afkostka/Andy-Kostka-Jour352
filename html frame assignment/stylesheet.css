@@ -1,0 +1,39 @@
+#headline{text-align: center;
+          font-size: 40 px;
+        font-weight: bold;
+        font-family: georgia,serif;}
+
+#byline{text-align: center;
+        font-size: 18px;
+      font-weight: lighter;
+      font-variant: small-caps;}
+#h3{text-align: left;
+    font-size: 28px;
+    font-style: normal;
+    font-family: sans-serif;}
+
+#container{width:90%;
+      padding-left: 20px;
+    max-width: 1200px;
+    margin:0 auto;
+    padding-bottom: 50px;}
+
+#text{font-family: arial, serif;}
+
+.responsive{width: 100%;
+    height: auto;
+  max-width: 900px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+#caption{text-align: center;
+        color:grey;}
+#footer{
+  height:30px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;}
