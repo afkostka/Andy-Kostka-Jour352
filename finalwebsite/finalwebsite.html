@@ -1,0 +1,254 @@
+<!doctype hmtl>
+<html lang="engl">
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>HTML frame assignment</title>
+  <meta name="description" content="Website description goes here">
+  <meta name="author" content="Andy Kostka">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Load c3.css -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+   <!-- Load our CSS -->
+   <link rel="stylesheet" href="stylesheet.css">
+
+   <!-- Load d3.js and c3.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+  <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="baseball.jpg" width="30" height="30" class="d-inline-block align-top" alt="baseball pic">
+    The Business of Baseball
+  </a>
+</nav>
+
+<!--end random heading -->
+
+<!--heading-->
+<!--
+<div id="headline">Ice Cold Hot Stove</div>
+-->
+<!--end heading-->
+
+<div class="container">
+  <div class="show-small">Ice Cold Hot Stove</div>
+  <img src="whitmerrifield1.jpg" alt="whit Merrifield" style="width:100%;">
+
+<div class="show-big">
+  <br>
+  <br>
+  <div class="centered">Ice Cold Hot Stove</div>
+  <div class="bottom-right">(Keith Allison/Flickr)</div>
+</div>
+</div>
+
+
+
+<!--
+<div class="hero-image">
+  <img src="whitmerrifield1.jpg" alt="whit Merrifield" class="responsive">
+</div>
+<figcaption id="caption"> Whit Merrifield led MLB in hits in 2018, but earned pennies on the dollar for it. (Keith Allison/Flickr)</figcaption>
+-->
+
+
+
+<br>
+<h2 id="intro" style="text-align: center;">
+Baseball is getting younger, and teams are proving it with their free agent spending — or lack thereof.
+</h2>
+<br>
+<p id="byline"> By Andy Kostka</p>
+
+
+
+<div id="container">
+<!--  <h3 id="chapter">Chapter Heading</h3>
+-->
+<p id="text">In the bottom of the eighth inning on Sept. 30, 2018, Whit Merrifield walked off the field to a standing ovation. The Kansas City Royals’ season was very much over — they finished 58-104, fifth in the American League Central Division — but the crowd at Kauffman Stadium in Kansas City appreciated their unheralded star for all he did during an otherwise underwhelming campaign.</p>
+
+
+<p id="text">Moments earlier, Merrifield’s bouncing single into center field continued a career-high 20-game hitting streak, and the base knock — the final of 192 during his breakout year — led the Major Leagues. Then, just for good measure, Merrifield swiped his league-best 45th base and advanced to third on a throwing error.</p>
+
+<p id="text">That’s when manager Ned Yost signaled for a pinch runner, offering Merrifield and the fans the chance to say goodbye — one to the only franchise he’s ever known since being drafted out of South Carolina, and the 19,690 on hand to a rare star in a franchise resigned to losing such players of late.</p>
+
+<p id="text">Merrifield, who finished 17th in MVP voting despite playing for one of the worst teams in baseball, wrapped up the 2018 season hitting .304 with 60 RBIs, 12 home runs and 88 runs scored. The then-29-year-old could enter the arbitration process, which potentially could have led to true free agency if the Royals weren’t willing to foot the bill of his true value on a year-to-year basis or Merrifield rejected arbitration.</p>
+
+<p id="text">But Merrifield opted to avoid the unknown, instead securing his future in Kansas City with a laughably low-ball contract extension for a player of his caliber. Merrifield signed a four-year, $16.25 million deal with a team option in 2023.</p>
+
+<p id="text">The average age of free agents in the 2018-19 offseason was 33.1, and teams have shown an unwillingness to spend on aging stars, opting to promote from within.</p>
+
+<h2>How long are MLB free agency deals?</h2>
+<p>The average age of free agents in the 2018-19 offseason was 33.1, and teams have shown an unwillingness to spend on aging stars, opting to promote from within.</p>
+ <div id="contractbarchart"></div>
+ <div class="graphic-container">
+      <div id="mybarChart"></div>
+    <em>Source: MLB Trade Rumors</em>
+  </div>
+
+  <script>
+  var chart2 = c3.generate({
+    bindto: '#contractbarchart',
+    data: {
+      columns: [
+        ['One-year', 88],
+        ['Two-year', 22],
+        ['Three-year', 7],
+        ['Four-year', 3],
+        ['Five-year', 0],
+        ['Six-year or longer', 3],
+      ],
+      type: 'bar'
+    },
+    color: {
+      pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
+    }
+  });
+  </script>
+  <br>
+
+<p id="text">Merrifield’s decision is a trickledown from a broken system for the players, one that keeps franchise’s in complete control over their players while not properly compensating them for their play. As of late, free agency hasn’t been the promised land of old. If you’re not named Manny Machado or Bryce Harper — or, in the past, Alex Rodriguez or Prince Fielder — the money isn’t there.</p>
+
+<p id="text">Teams are lowballing offers, blackballing over 30-year-olds and creating a price-fixed free agent market that has more and more stars opting for reassuring contract extensions than capitalistic bidding. Mike Trout, Xander Bogaerts, Ronald Acuna and Ozzie Albies are just some of the latest stars to lock up a future with their current team rather than face the uncertain offseason market.</p>
+
+<p id="text">“It’s hard to blame Merrifield for making the choice to secure his future even if it’s for less than he’s worth. But the fact that those were his options — take this below-market contract, or go year-to-year and hope that everything works out — is a damning indictment of MLB’s economic system,” Jon Taylor of <a href= "https://www.si.com/mlb/2019/01/28/whit-merrifield-kansas-city-royals-arbitration" target="blank">Sports Illustrated</a> wrote Jan. 28. “For the best years of their lives, players are paid a fraction of their value, with owners reaping all the profits. And while this arrangement in previous years at least saw the players eventually collect what they deserved in free agency, the owners are no longer upholding their end of that bargain, as the last two winters have shown.”</p>
+
+<div class="hero-image">
+  <img src="whitmerrifield3.jpg" alt="whit Merrifield" class="responsive">
+</div>
+<figcaption id="caption"> Whit Merrifield led MLB in hits in 2018, but earned pennies on the dollar for it. (Keith Allison/Flickr)</figcaption>
+
+<h3 id="chapter">A Young Man's Game</h3>
+
+<p id="text">Players must accrue three years of MLB service time before they can enter arbitration — a way to negotiate with a team to increase salary according to the league minimum based on performance. It takes six years of service time to reach true free agency. Considering that the average age of a player when they make their MLB debut is 24.4 years, that leaves little options for them when they do finally reach free agency.</p>
+
+<p id="text">Machado and Harper, two teenage phenoms who turned into superstars, reached free agency at 26 and both signed deals worth at least $300 million.</p>
+
+<p id="text">But for late-bloomers like Merrifield, who made his debut at 27, there are few paths forward. And according to <a href="https://www.spotrac.com/mlb/free-agents/" target="blank"> Spotrac,</a> a contract breakdown site, the 147 free agents in 2018 who signed at least one-year deals were on average 32.6 years old. The 2019 free agency class’ average age was 33.1.</p>
+
+<p id="text">Now, though, younger players are breaking through sooner than they have since the 1970 and are producing at higher rates than older players. So, teams are more willing to look within their farm system for replacements than searching for outside solutions.</p>
+
+<p id="text">That became evident with a slow free agent market once again. Free agency began Nov. 3, but when 2018 turned into 2019, long-term deals were nearly nonexistent. Just seven deals of three or more years had been signed in November and December. Even Harper had to wait until Feb. 28, one month until opening day, to sign his 13-year deal with the Philadelphia Phillies.</p>
+
+<p id="text">“If teams aren’t going to spend, then the majority of the players aren’t going to view free agency as the ultimate prize, but as a terrifying unknown,” Taylor wrote. “Better to get that money now, then, even if it’s not as much as you think you should get.”</p>
+
+<h2>How has age evolved?</h2>
+<p>The average age of MLB players has remained relatively stable over the last decade, but its 28.073 mark in 2018 is the lowest of the decade.</p>
+<div id="agelinechart"></div>
+<div class="graphic-container">
+
+  <div id="agelinechart"></div>
+  <em>Source: Sports Reference</em>
+
+<script type="text/javascript">
+//CHART 1
+var chart = c3.generate({
+ bindto: '#agelinechart',
+ data: {
+   x: 'x',
+   columns: [
+    ['x', 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+        ['Average Age', 28.85333, 28.88667, 28.73333, 28.52667, 28.52333, 28.5, 28.4, 28.44, 28.3, 28.073],
+   ]
+ },
+ color: {
+   pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+ }
+});
+</script>
+</div>
+<br>
+<br>
+<h3 id="chapter">'Free Agency is Weird'</h3>
+
+<p id="text">In the first 50 days of the 2019 offseason, 19 free agents had signed one-year deals. That was good for 67.9 percent of the 28 signings made, according to <a href="http://www.thebaseballcube.com/" target="blank">Baseball Cube,</a> the greatest share of one-year contracts in the past six offseasons.</p>
+
+<p id="text">Plus, just 5.2 percent of eligible free agents had signed a deal through the first 50 days, showing another worrying dip in productivity from teams.</p>
+
+<p id="text">So, before Trout signed a 12-year, $430 million deal with the Angels on March 29, the two-time MVP discussed free agency with Machado and Harper, two stars that had just been through the ordeal.</p>
+
+<div class="row">
+  <div class="column">
+    <img src="mannymachado1.jpg" alt="manny" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="miketrout1.jpg" alt="trout" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="bryceharper1.jpg" alt="bryce" style="width:100%">
+  </div>
+  <figcaption id="caption"> Manny Machado (left) and Brycer Harper (right) signed big free agency deals, but the experience didn't appeal to Mike Trout. (Keith Allison/Flickr)</figcaption>
+</div>
+<br>
+
+<p id="text">“I kind of saw what Bryce and Manny went through and it drew a red flag for me. I talked to Manny and Bryce. It was a tough couple months in the offseason,” <a href=" https://www.si.com/mlb/2019/03/24/mike-trout-contract-extension-bryce-harper-manny-machado-mlb-free-agency" target="blank">Trout said.</a> “They put [that] perspective in my mind. I obviously want to be an Angel for life. That was a big key.”</p>
+
+<p id="text">More players have followed his example, such as Albies and Acuna with the Atlanta Braves, who gave up some of the money they might have received in a healthy free agent market for the guarantee of a deal right now.</p>
+
+<p id="text">They might have seen the difficulties Dallas Keuchel and Craig Kimbrel have undergone, now well into the season. The pitchers — Keuchel most recently a starter with the Houston Astros and Kimbrel a closer for the Boston Red Sox — have been to their share of All-Star games. But both remain unsigned, two victims of an ice-cold Hot Stove that may only be fixed when the collective bargaining agreement expires in 2021.</p>
+
+<p id="text">So, is it really much of a surprise Merrifield is back playing for a dismal team for much less than market value?</p>
+
+<p id="text">“Free agency is weird,” Washington Nationals starter <a href="https://www.nbcsports.com/washington/nationals/another-slow-hot-stove-raises-question-it-time-mlb-free-agency-deadline" target="none">Max Scherzer said,</a> “and it’s only gotten weirder.”</p>
+
+
+</div>
+
+<!--end body-->
+<!--start template for three columns-->
+<!--quiet
+<div class="container">
+        <div class="row">
+
+                <div class="col-md-4">
+                        <h3>Heading 1</h3>
+
+                </div>
+
+
+                <div class="col-md-4">
+                        <h3>Heading 2</h3>
+
+                </div>
+
+                <div class="col-md-4">
+                        <h3>Heading 3</h3>
+
+                </div>
+        </div>
+</div>
+<br>
+<br>
+-->
+<!--end three column-->
+
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1NrEN9LM1Tm3byxh1K-VDCsNBmRxDdWgzmAWtmvfB6WM&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+
+
+<!--start footer-->
+<footer id="footer">©The Business of Baseball</footer>
+
+<!--end footer-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+
+
+</html>
